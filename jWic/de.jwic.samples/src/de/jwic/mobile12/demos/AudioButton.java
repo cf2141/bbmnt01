@@ -16,9 +16,6 @@ import de.jwic.controls.mobile04.Icon;
 import de.jwic.controls.mobile04.IconPos;
 import de.jwic.controls.mobile04.Theme;
 
-//adding audio.Player 
-import de.jwic.mobile12.demos.audio.Player;
-
 /**
  * Represents the &lt;button&gt; html element. 
  * This button displays links to an audio, and - future - video file.

@@ -10,7 +10,6 @@ import de.jwic.base.JavaScriptSupport;
 public class VideoController extends ControlContainer {
 	
 	private ControlContainer container;
-	private PlayPause playPause;
 	
 	/**
 	 * Constructor.

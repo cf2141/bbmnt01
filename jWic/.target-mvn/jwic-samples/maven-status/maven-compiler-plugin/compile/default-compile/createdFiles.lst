@@ -214,7 +214,6 @@ de/jwic/mobile/demos/DatePickerDemo.class
 de/jwic/demo/container/StackedContainerDemo$1.class
 de/jwic/demo/advanced/ColumnSelectorResult.class
 de/jwic/magneticechos01/demos/InputDemo$2.class
-de/jwic/mobile12/demos/audio/PlayPause.class
 de/jwic/demo/container/GroupControlDemo$2.class
 de/jwic/mobile11/demos/SelectMenuDemo11.class
 de/jwic/mobile11/MobileDemoPage$1.class
@@ -645,7 +644,6 @@ de/jwic/demo/tbv/TableViewerDemo$1.class
 de/jwic/samples/controls/ListBoxDemo$1.class
 de/jwic/demo/tbv/AddDemoTaskDialog$2.class
 de/jwic/demo/basics/DatePickerDemo$7.class
-de/jwic/mobile12/demos/audio/Player.class
 de/jwic/mobile07/demos/EchoWindow$1.class
 de/jwic/demo/chartdb/DashboardModel.class
 de/jwic/demo/pojoedit/MyPojo$Status.class

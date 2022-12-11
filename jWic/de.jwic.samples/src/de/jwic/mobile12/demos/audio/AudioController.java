@@ -10,7 +10,6 @@ import de.jwic.base.JavaScriptSupport;
 public class AudioController extends ControlContainer {
 	
 	private ControlContainer container;
-	private PlayPause playPause;
 	
 	/**
 	 * Constructor.
