@@ -20,7 +20,7 @@ public class MobileDemoApplication extends Application {
 		final List<MobileDemoModule> mobileDemoModules = new ArrayList<MobileDemoModule>();
 
 		mobileDemoModules.add(new MobileAudioRND());
-		mobileDemoModules.add(new EchoWindow());
+		//mobileDemoModules.add(new EchoWindow());
 		mobileDemoModules.add(new AudioDevPage());
 		mobileDemoModules.add(new SelectMenuDemo12());
 		mobileDemoModules.add(new InputDemo());

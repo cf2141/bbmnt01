@@ -53,7 +53,7 @@ public class AudioButton extends SelectableControl {
 	private Theme theme = null;
 	private String wrapperClass = null;
 	
-	private Player player = null;
+	//private Player player = null;
 	
 	/**
 	 * @param container
@@ -72,17 +72,6 @@ public class AudioButton extends SelectableControl {
 		super(container, name);
 		init();
 		System.out.println("AudioButton(IControlContainer container, String name)");
-	}
-	
-	/**
-	 * @param container
-	 * @param name
-	 */
-	public AudioButton(IControlContainer container, String name, Player p) {
-		super(container, name);
-		init();
-		System.out.println("AudioButton(IControlContainer container, String name, Player p)");
-		player = p;
 	}
 	
 	/* (non-Javadoc)

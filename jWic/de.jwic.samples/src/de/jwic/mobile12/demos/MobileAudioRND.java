@@ -37,7 +37,7 @@ public class MobileAudioRND extends MobileDemoModule  {
 	protected transient Log log = LogFactory.getLog(getClass());
 
     public MobileAudioRND() {
-        super("Mobile Audio RND");
+        super("Magnetic Echos");
     }
 
 
@@ -50,20 +50,6 @@ public class MobileAudioRND extends MobileDemoModule  {
 
 		final AC2 audioCtlX = new AC2( container );
 
-		/****
-		final MButton toggleFromJava = new MButton(container, "toggleFromJava");
-		toggleFromJava.setTitle("Send");
-		toggleFromJava.addSelectionListener(new SelectionListener() {
-			@Override
-			public void objectSelected(SelectionEvent event) {
-				System.out.println("Toggle?");
-				//checkBox.setChecked(!checkBox.isChecked());
-			}
-		});
-		 */
-
-		//final AudioController audioCtl = new AudioController( container );
-		
 		final ScrollableContainer sc = new ScrollableContainer(container);
 		sc.setHeight("350px");
 		sc.setWidth("300px");
@@ -97,9 +83,6 @@ public class MobileAudioRND extends MobileDemoModule  {
 			for (int i = 0; i < arr.length(); i++) {
 				System.out.println(" " + arr.get(i));
 				arrayOButtons[i] = new AudioButton(tlc);
-				//--------------------------------
-				//arrayOButtons[i].addSelectionListener(
-				//	    (new AudioSelection(""+arr.get(i), null, null, audioCtl)));
 				//--------------------------------
 				arrayOButtons[i].addSelectionListener(
 					    (new AudioSelection2(""+arr.get(i), null, null, audioCtlX)));
