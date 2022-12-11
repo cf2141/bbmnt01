@@ -8,19 +8,12 @@ import de.jwic.base.IControlContainer;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
-import de.jwic.controls.mobile04.MButton;
 import de.jwic.events.SelectionEvent;
 import de.jwic.events.SelectionListener;
 
 import de.jwic.mobile12.demos.audio.AC2;
 
-//---------------------------------------------------------------------
-import de.jwic.mobile12.demos.audio.AudioController;
-
-//---------------------------------------------------------------------
 import de.jwic.controls.layout.TableLayoutContainer;
-import de.jwic.events.SelectionEvent;
-import de.jwic.events.SelectionListener;
 
 import de.jwic.controls.ScrollableContainer;
 
@@ -39,7 +32,6 @@ public class MobileAudioRND extends MobileDemoModule  {
     public MobileAudioRND() {
         super("Magnetic Echos");
     }
-
 
 	/* (non-Javadoc)
 	 * @see de.jwic.mobile.MobileDemoModule#createPage(de.jwic.base.IControlContainer)
@@ -61,10 +53,9 @@ public class MobileAudioRND extends MobileDemoModule  {
 			
 		    String url = "http://localhost:8080/01-amp3s/01-amp3s.json";
 		    URL obj = new URL(url);
+
 		    HttpURLConnection con = (HttpURLConnection)obj.openConnection();
-		    int responseCode = con.getResponseCode();
-		    System.out.println("\nSending 'GET' request to URL : " + url);
-		    System.out.println("Response Code : " + responseCode);
+
 		    BufferedReader in =new BufferedReader(
 		    		new InputStreamReader(con.getInputStream()));
 		    String inputLine;
@@ -72,26 +63,22 @@ public class MobileAudioRND extends MobileDemoModule  {
 		    while ((inputLine = in.readLine()) != null) {
 			  response.append(inputLine);
 		    } in .close();
-		    //print in String
-		    System.out.println(response.toString());
-		    JSONObject myresponse = new JSONObject(response.toString());
-		   
+
+		    JSONObject myresponse = new JSONObject(response.toString());		   
 			JSONArray arr = myresponse.getJSONArray("echo-list");
 			
 			AudioButton[] arrayOButtons = new AudioButton[arr.length()];
 			
 			for (int i = 0; i < arr.length(); i++) {
+
 				System.out.println(" " + arr.get(i));
 				arrayOButtons[i] = new AudioButton(tlc);
-				//--------------------------------
 				arrayOButtons[i].addSelectionListener(
 					    (new AudioSelection2(""+arr.get(i), null, null, audioCtlX)));
-				//--------------------------------
+
 				arrayOButtons[i].addSelectionListener(new SelectionListener(){
 					@Override
 					public void objectSelected(SelectionEvent event) {
-						System.out.println("++++++++++++++++objectSelected");
-						System.out.println("                "+event.toString());
 						container.requireRedraw();
 					}
 				});

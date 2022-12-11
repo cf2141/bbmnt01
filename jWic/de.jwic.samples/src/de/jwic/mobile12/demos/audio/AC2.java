@@ -1,9 +1,7 @@
 package de.jwic.mobile12.demos.audio;
 
-import de.jwic.base.Control;
 import de.jwic.base.ControlContainer;
 import de.jwic.base.IControlContainer;
-import de.jwic.data.ISelectElement;
 import de.jwic.base.JavaScriptSupport;
 
 import de.jwic.mobile12.demos.audio.AC2;
@@ -35,8 +33,6 @@ public class AC2 extends ControlContainer {
 		audioStr = a;
 	}
 	public String getAudio() {
-		//System.out.println("Player.setAudio "+"http://localhost:8080/01-amp3s/"+audioStr);
-		//return "http://localhost:8080/01-amp3s/"+audioStr;
 		return "http://173.166.130.89:8080/01-amp3s/"+audioStr;
 	}
 	public String getTitle() {

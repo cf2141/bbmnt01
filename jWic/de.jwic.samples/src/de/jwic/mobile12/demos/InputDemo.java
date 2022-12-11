@@ -61,7 +61,6 @@ public class InputDemo extends MobileDemoModule {
 			@Override
 			public void objectSelected(SelectionEvent event) {
 				System.out.println("Toggle?");
-				//checkBox.setChecked(!checkBox.isChecked());
 			}
 		});
 

@@ -42,37 +42,33 @@ public final class SelectMenuDemo12 extends MobileDemoModule {
 		selectmenu.setSelectedElement(firstone);
 		
 		try {
-		  String url = "http://localhost:8080/01-amp3s/01-amp3s.json";
-		  URL obj = new URL(url);
-		  HttpURLConnection con = (HttpURLConnection)obj.openConnection();
-		  int responseCode = con.getResponseCode();
-		  System.out.println("\nSending 'GET' request to URL : " + url);
-		  System.out.println("Response Code : " + responseCode);
-		  BufferedReader in =new BufferedReader(
-		  new InputStreamReader(con.getInputStream()));
-		  String inputLine;
-		  StringBuffer response = new StringBuffer();
-		    while ((inputLine = in.readLine()) != null) {
-			  response.append(inputLine);
-		    } in .close();
-		    //print in String
-		    System.out.println(response.toString());
-		    JSONObject myresponse = new JSONObject(response.toString());
-		   
+
+			String url = "http://localhost:8080/01-amp3s/01-amp3s.json";
+			URL obj = new URL(url);
+			HttpURLConnection con = (HttpURLConnection)obj.openConnection();
+
+			BufferedReader in =new BufferedReader(
+			new InputStreamReader(con.getInputStream()));
+			String inputLine;
+			StringBuffer response = new StringBuffer();
+
+			while ((inputLine = in.readLine()) != null) {
+				response.append(inputLine);
+			} in .close();
+
+			JSONObject myresponse = new JSONObject(response.toString());		   
 			JSONArray arr = myresponse.getJSONArray("echo-list");
-			
-			//AudioButton[] arrayOButtons = new AudioButton[arr.length()];
 			
 			for (int i = 0; i < arr.length(); i++) {
 				System.out.println(" " + arr.get(i));
 				selectmenu.addElement(""+arr.get(i), ""+i+"-"+arr.get(i));
-		    /**
+		    	/**
 				arrayOButtons[i] = new AudioButton(tlc);
 				arrayOButtons[i].addSelectionListener(
 					                       (new AudioSelection(""+arr.get(i))));
 				arrayOButtons[i].setTitle(""+arr.get(i));
 				arrayOButtons[i].setAudioLink("http://localhost:8080/01-amp3s/"+arr.get(i));
-			**/
+				**/
 			}
 		   
 		} catch(Exception e) {
