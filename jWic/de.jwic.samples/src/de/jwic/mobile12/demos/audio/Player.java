@@ -21,12 +21,14 @@ public class Player extends Control {
 		}
 	}
 	public String getAudio() {
-		System.out.println("Player.setAudio "+"http://localhost:8080/01-amp3s/"+strAudio);
+		//System.out.println("Player.setAudio "+"http://localhost:8080/01-amp3s/"+strAudio);
+		System.out.println("Player.setAudio "+"http://173.166.130.89:8080/01-amp3s/"+strAudio);
 		try {
 			this.requireRedraw();
 		} catch (Exception ex) {
 		}
-		return "http://localhost:8080/01-amp3s/"+strAudio;
+		//return "http://localhost:8080/01-amp3s/"+strAudio;
+		return "http://173.166.130.89:8080/01-amp3s/"+strAudio;
 	}
 	public String getTitle() {
 		return strAudio;

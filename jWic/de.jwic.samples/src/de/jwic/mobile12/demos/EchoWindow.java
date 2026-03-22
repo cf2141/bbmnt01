@@ -86,7 +86,10 @@ public class EchoWindow extends MobileDemoModule {
 					}
 				});
 				arrayOButtons[i].setTitle(""+arr.get(i));
-				arrayOButtons[i].setAudioLink("http://localhost:8080/01-amp3s/"+arr.get(i));
+				//arrayOButtons[i].setAudioLink("http://localhost:8080/01-amp3s/"+arr.get(i));
+				//http://173.166.130.89/
+				arrayOButtons[i].setAudioLink("http://173.166.130.89:8080/01-amp3s/"+arr.get(i));
+
 			}
 		} catch(Exception e) {
 			System.out.println(e);

@@ -34,8 +34,10 @@ public class AudioController extends ControlContainer {
 		audioStr = a;
 	}
 	public String getAudio() {
-		System.out.println("Player.setAudio "+"http://localhost:8080/01-amp3s/"+audioStr);
-		return "http://localhost:8080/01-amp3s/"+audioStr;
+		//System.out.println("Player.setAudio "+"http://localhost:8080/01-amp3s/"+audioStr);
+		//return "http://localhost:8080/01-amp3s/"+audioStr;
+		System.out.println("Player.setAudio "+"http://173.166.130.89:8080/01-amp3s/"+audioStr);
+		return "http://173.166.130.89:8080/01-amp3s/"+audioStr;
 	}
 	public String getTitle() {
 		return audioStr;
