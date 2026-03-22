@@ -9,7 +9,7 @@ import de.jwic.controls.mobile04.MButton;
 import de.jwic.events.SelectionEvent;
 import de.jwic.events.SelectionListener;
 
-import de.jwic.mobile12.demos.audio.AC2;
+//import de.jwic.mobile12.demos.audio.AC2;
 
 public class MobileAudioRND extends MobileDemoModule  {
 
@@ -24,7 +24,7 @@ public class MobileAudioRND extends MobileDemoModule  {
 	public Control createPage(IControlContainer controlContainer) {
 		final ControlContainer container = new ControlContainer(controlContainer, "controlContainer");
 
-		final AC2 audioCtl = new AC2( container );
+		//final AC2 audioCtl = new AC2( container );
 			
         System.out.println("::createPage MobileAudioRND()");
 

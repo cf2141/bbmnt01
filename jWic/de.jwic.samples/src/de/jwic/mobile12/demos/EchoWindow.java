@@ -49,8 +49,10 @@ public class EchoWindow extends MobileDemoModule {
 
 		try {
 			
-		    String url = "http://localhost:8080/01-amp3s/01-amp3s.json";
+		    //String url = "http://localhost:8080/01-amp3s/01-amp3s.json";
+		    String url = "http://173.166.130.89:8080/01-amp3s/01-amp3s.json";
 		    URL obj = new URL(url);
+			System.out.println("HttpURLConnection con " + url);
 		    HttpURLConnection con = (HttpURLConnection)obj.openConnection();
 		    int responseCode = con.getResponseCode();
 		    System.out.println("\nSending 'GET' request to URL : " + url);
@@ -93,6 +95,7 @@ public class EchoWindow extends MobileDemoModule {
 			}
 		} catch(Exception e) {
 			System.out.println(e);
+			e.printStackTrace();
 		}
 		return container;
 	}
