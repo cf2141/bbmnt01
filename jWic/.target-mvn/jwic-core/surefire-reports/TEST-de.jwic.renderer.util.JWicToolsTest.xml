@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="5" failures="0" name="de.jwic.renderer.util.JWicToolsTest" time="0.012" errors="0" skipped="0">
+<testsuite tests="5" failures="0" name="de.jwic.renderer.util.JWicToolsTest" time="0.015" errors="0" skipped="0">
   <properties>
     <property name="jansi.mode" value="force"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
@@ -62,9 +62,9 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="de.jwic.renderer.util.JWicToolsTest" name="testFormatInp" time="0.012"/>
+  <testcase classname="de.jwic.renderer.util.JWicToolsTest" name="testFormatInp" time="0.011"/>
   <testcase classname="de.jwic.renderer.util.JWicToolsTest" name="testFormatDate" time="0"/>
   <testcase classname="de.jwic.renderer.util.JWicToolsTest" name="testFormatHtml" time="0"/>
   <testcase classname="de.jwic.renderer.util.JWicToolsTest" name="testFormatTime" time="0"/>
-  <testcase classname="de.jwic.renderer.util.JWicToolsTest" name="testFormatDateTime" time="0"/>
+  <testcase classname="de.jwic.renderer.util.JWicToolsTest" name="testFormatDateTime" time="0.004"/>
 </testsuite>
