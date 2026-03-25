@@ -50,7 +50,8 @@ public class EchoWindow extends MobileDemoModule {
 
 		try {
 			
-		    String url = "http://localhost:8080/02-linder/linder-list.json";
+		    //String url = "http://localhost:8080/02-linder/linder-list.json";
+		    String url = "http://localhost:8080/01-amp3s/01-amp3s.json";
 		    URL obj = new URL(url);
 		    HttpURLConnection con = (HttpURLConnection)obj.openConnection();
 		    int responseCode = con.getResponseCode();

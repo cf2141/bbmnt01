@@ -70,7 +70,7 @@
    68  ls -l
    69  sudo chgrp -R tomcat /opt/tomcat
    70  sudo chmod -R g+r conf
-   71  sudo chmod g+x conf
+   71  sudo chmod -R g+r conf
    72  sudo chown -R tomcat webapps/ work/ temp/ logs/
    73  sudo vi /etc/systemd/system/tomcat.service
    74  sudo update-alternatives --config java
